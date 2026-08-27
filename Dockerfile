@@ -7,5 +7,5 @@ COPY config/mtg.toml /config.toml
 COPY web/index.html.tpl /web/index.html.tpl
 COPY entrypoint.sh /entrypoint.sh
 RUN chmod +x /entrypoint.sh
-EXPOSE 3128 8080
+EXPOSE 8888 8080
 CMD ["/entrypoint.sh"]
