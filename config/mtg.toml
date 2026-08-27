@@ -1,2 +1,17 @@
 secret = "ee65e82630ee51b76b7d4c06bf254d81427777772e6d6963726f736f66742e636f6d"
 bind-to = "0.0.0.0:3128"
+tolerate-time-skewness = "5s"
+
+[defense.anti-replay]
+enabled = true
+max-size = "1mib"
+error-rate = 0.001
+
+[defense.doppelganger]
+urls = [
+  "https://www.microsoft.com/favicon.ico",
+  "https://www.microsoft.com/en-us/robots.txt"
+]
+repeats-per-raid = 10
+raid-each = "6h"
+drs = false
