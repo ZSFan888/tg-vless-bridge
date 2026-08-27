@@ -1,5 +1,5 @@
 # Build mtg from the latest official source.
-FROM golang:1.24-alpine AS mtg-builder
+FROM golang:1.27-alpine AS mtg-builder
 
 RUN apk add --no-cache ca-certificates git
 WORKDIR /src
