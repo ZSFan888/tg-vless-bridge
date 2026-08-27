@@ -1,0 +1,23 @@
+{
+  "inbounds": [{
+    "listen": "127.0.0.1",
+    "port": 1080,
+    "protocol": "socks",
+    "settings": { "auth": "noauth", "udp": true }
+  }],
+  "outbounds": [{
+    "protocol": "vless",
+    "settings": {
+      "vnext": [{
+        "address": "cdn.091224.xyz",
+        "port": 8880,
+        "users": [{ "id": "64b0e666-02ad-4031-a339-beb39ec00b53", "encryption": "none" }]
+      }]
+    },
+    "streamSettings": {
+      "network": "ws",
+      "security": "none",
+      "wsSettings": { "path": "/?ed=2560", "headers": { "Host": "little-frost-ea36.pwvpsdbj.workers.dev" } }
+    }
+  }]
+}
