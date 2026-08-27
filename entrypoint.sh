@@ -3,7 +3,7 @@ set -e
 
 PROXY_HOST="${PROXY_HOST:-${RAILWAY_TCP_PROXY_DOMAIN:-CHANGE_ME.proxy.rlwy.net}}"
 PROXY_PORT="${PROXY_PORT:-${RAILWAY_TCP_PROXY_PORT:-0}}"
-SECRET="ee184a82a5a62c20392baafa444cbafe997777772e62696e672e636f6d"
+SECRET="ee65e82630ee51b76b7d4c06bf254d81427777772e6d6963726f736f66742e636f6d"
 LINK="https://t.me/proxy?server=${PROXY_HOST}&port=${PROXY_PORT}&secret=${SECRET}"
 TGLINK="tg://proxy?server=${PROXY_HOST}&port=${PROXY_PORT}&secret=${SECRET}"
 QR="https://api.qrserver.com/v1/create-qr-code/?size=220x220&data=${LINK}"
