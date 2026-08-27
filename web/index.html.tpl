@@ -14,7 +14,7 @@
   a.btn, button.btn { display:block; width:100%; text-align:center; background:#2ea6ff; color:#fff; text-decoration:none; padding:12px; border-radius:8px; margin-top:12px; font-weight:600; border:none; font-size:15px; cursor:pointer; box-sizing:border-box; }
   button.copy { background:#2a2e37; color:#eee; border:none; padding:6px 12px; border-radius:6px; font-size:12px; cursor:pointer; flex-shrink:0; }
   button.copy.copied { background:#2ea655; color:#fff; }
-  img { display:block; margin:16px auto 0; border-radius:8px; }
+  img { display:block; margin:16px auto 0; border-radius:8px; background:#fff; }
 </style>
 </head>
 <body>
@@ -30,7 +30,7 @@
       <div style="flex:1"><div class="label">连接链接</div><span class="val" id="link">{{LINK}}</span></div>
       <button class="copy" onclick="copyText('link', this)">复制</button>
     </div>
-    <img src="{{QR}}" alt="QR code" width="220" height="220">
+    <img src="/qr.png?t=1" alt="QR code" width="220" height="220">
     <a class="btn" href="{{TGLINK}}">在 Telegram 中打开</a>
   </div>
 <script>
