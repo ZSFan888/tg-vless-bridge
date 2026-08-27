@@ -1,4 +1,3 @@
-FROM teddysun/xray:latest
-COPY config.json /etc/xray/config.json
-EXPOSE 1080
-CMD ["xray", "run", "-c", "/etc/xray/config.json"]
+FROM nineseconds/mtg:2
+COPY mtg.toml /config.toml
+CMD ["run", "/config.toml"]
